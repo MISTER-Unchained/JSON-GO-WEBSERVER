@@ -13,4 +13,4 @@ RUN go mod init main
 
 RUN go mod tidy
 
-CMD ["go", "build", "."]
+CMD ["go", "run", "."]
