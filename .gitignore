@@ -1,3 +1,4 @@
 *.exe
 *.mod
-go.mod
+*.mod
+*.sum
