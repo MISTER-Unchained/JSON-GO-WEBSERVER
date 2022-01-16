@@ -14,4 +14,4 @@ RUN go mod init main
 RUN go mod tidy
 
 
-CMD ["sudo", "go", "run", "."]
+CMD ["go", "run", "."]
