@@ -1,8 +1,8 @@
 FROM golang:latest
 
-RUN mkdir /go/
+RUN mkdir /go-project/
 
-COPY . /go/
+COPY . /go-project/
 
 EXPOSE 80
 
