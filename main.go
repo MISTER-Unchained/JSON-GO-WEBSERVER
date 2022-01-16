@@ -67,6 +67,10 @@ func main() {
 	})
 	addr := setup.Bindip + ":" + strconv.Itoa(setup.Port)
 	log(fmt.Sprintf("serving on:  \"" + addr + "\"  "))
+
+	for i := 0; i < 10; i++ {
+		fmt.Println("not working dammit")
+	}
+
 	r.Run(addr)
-	fmt.Println("not working dammit")
 }
