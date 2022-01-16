@@ -13,6 +13,5 @@ RUN go mod init main
 
 RUN go mod tidy
 
-RUN go build -o out .
 
-CMD ["sudo", "./out"]
+CMD ["sudo", "go", "run", "."]
