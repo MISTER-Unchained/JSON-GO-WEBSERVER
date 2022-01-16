@@ -1,11 +1,15 @@
 FROM golang:latest
 
-# COPY . .
+RUN mkdir /go/
 
-# EXPOSE 80
+COPY . /go/
 
-# RUN go mod init main
+EXPOSE 80
 
-# RUN go mod tidy
+WORKDIR /go/
 
-# CMD ["go", "build", "."]
+RUN go mod init main
+
+RUN go mod tidy
+
+CMD ["go", "build", "."]
