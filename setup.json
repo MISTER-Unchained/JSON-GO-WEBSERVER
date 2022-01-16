@@ -1,7 +1,7 @@
 {
     "id": 1,
     "name": "mainserver",
-    "bindip": "localhost",
+    "bindip": "0.0.0.0",
     "hostnames": [
         "something.com",
         "www.something.com"
