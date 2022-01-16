@@ -52,6 +52,10 @@ func main() {
 	gin.DefaultWriter = io.MultiWriter(f, os.Stdout)
 	r := gin.Default()
 
+	r.GET("/download-example/", func(c *gin.Context) {
+		c.FileAttachment("./static/content/output.json", "some-data.json")
+	})
+
 	for k, v := range setup.Staticcontent {
 		r.Static(k, v)
 		log(fmt.Sprintf("setup static content route: <\"" + k + "\">|<\"" + v + "\">"))
