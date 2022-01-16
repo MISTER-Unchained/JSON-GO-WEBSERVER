@@ -2,11 +2,12 @@ FROM golang:latest
 
 RUN mkdir /go-project/
 
-COPY . /go-project/
+WORKDIR /go-project/
+
+COPY . .
 
 EXPOSE 80
 
-WORKDIR /go/
 
 RUN go mod init main
 
