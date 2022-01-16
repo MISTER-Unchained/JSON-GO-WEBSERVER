@@ -1,11 +1,11 @@
 FROM golang:latest
 
-COPY . .
+# COPY . .
 
-EXPOSE 80
+# EXPOSE 80
 
-RUN go mod init main
+# RUN go mod init main
 
-RUN go mod tidy
+# RUN go mod tidy
 
-CMD ["go", "build", "."]
+# CMD ["go", "build", "."]
