@@ -47,7 +47,7 @@ func log(s string) {
 
 func main() {
 	setup := readserverfile("./setup.json")
-	// gin.SetMode(gin.ReleaseMode)
+	gin.SetMode(gin.ReleaseMode)
 	f, _ := os.Create(fmt.Sprintf("./log/" + strconv.Itoa(setup.Id) + "-" + setup.Name + "-gin.log"))
 	gin.DefaultWriter = io.MultiWriter(f, os.Stdout)
 	r := gin.Default()
