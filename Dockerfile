@@ -6,6 +6,7 @@ WORKDIR /go-project/
 
 COPY . .
 
+EXPOSE 5000
 
 RUN go mod init main
 

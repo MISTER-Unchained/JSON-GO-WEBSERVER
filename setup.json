@@ -14,5 +14,5 @@
         "/static/" : "./static/content/",
         "/usercontent/" : "./users/"
     },
-    "port" : 42069
+    "port" : 5000
 }
