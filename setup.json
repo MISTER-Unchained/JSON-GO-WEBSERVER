@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "name": "mainserver",
+    "bindip": "localhost",
+    "hostnames": [
+        "something.com",
+        "www.something.com"
+    ],
+    "routes": {
+        "/" : "./static/index.html",
+        "/favicon.ico": "./static/favicon.ico"
+    },
+    "staticcontent" : {
+        "/static/" : "./static/content/",
+        "/usercontent/" : "./users/"
+    },
+    "port" : 80
+}
